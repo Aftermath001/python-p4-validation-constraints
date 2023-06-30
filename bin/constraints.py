@@ -10,7 +10,7 @@ connection = "sqlite:///database.db"
 db   = create_engine(connection)
 base = declarative_base()
 
-class Patient(base):
+class Patient (base):
     __tablename__ = 'patient'
     name = Column(String(length=50), primary_key=True)
     birth_year = Column(Integer,
